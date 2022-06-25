@@ -1,0 +1,14 @@
+<div class="logo">
+    <h1>Time Tracker</h1>
+</div>
+
+<ul class="custom-nav nav nav-tabs">
+    <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "Time Entries", posts_path, class: "nav-link" %>
+    </li>
+    <li><%= link_to "Edit Details", edit_user_registration_path, class: "nav-link" %></li>
+    <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link text-danger" %></li>
+</ul>
