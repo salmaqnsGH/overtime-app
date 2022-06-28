@@ -5,5 +5,8 @@
         <td><%= post.user.full_name %></td>
         <td><%= truncate(post.rationale) %></td>
         <td>@<%= post.user_id %></td>
+        <td>
+            <%= link_to 'Edit', edit_post_path(post), id: "edit-#{post.id}" %>
+        </td>
     </tr>
 <% end %>
