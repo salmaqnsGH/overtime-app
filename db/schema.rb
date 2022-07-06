@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_25_081235) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_06_115101) do
   create_table "posts", force: :cascade do |t|
     t.date "date"
     t.text "rationale"
@@ -33,9 +33,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_25_081235) do
     t.string "last_sign_in_ip"
     t.string "first_name"
     t.string "last_name"
-    t.string "role"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "type"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
