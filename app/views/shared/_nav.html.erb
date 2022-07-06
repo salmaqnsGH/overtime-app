@@ -12,6 +12,8 @@
     <li class="nav-item">
         <%= link_to "New Entry", new_post_path, id: 'new_post_from_nav', class: "nav-link #{active?(new_post_path)}" %>
     </li>
-    <li><%= link_to "Edit Details", edit_user_registration_path, class: "nav-link  #{active?(edit_user_registration_path)}" %></li>
+    <li>
+        <%= link_to "TODO: Admin Dashboard", root_path, class: "nav-link" %>
+    </li>
     <li><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link text-danger" %></li>
 </ul>
