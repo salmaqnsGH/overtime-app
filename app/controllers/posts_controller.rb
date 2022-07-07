@@ -21,9 +21,11 @@ class PostsController < ApplicationController
     end
 
     def edit
+        authorize @post
     end
 
     def update
+        authorize @post
         @post.update(post_params)
         redirect_to posts_path, success: 'Your post was updated successfully'
     end
