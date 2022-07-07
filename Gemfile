@@ -48,7 +48,7 @@ gem 'jquery-rails'
 gem "autoprefixer-rails"
 gem "administrate"
 gem 'bourbon'
-
+gem "pundit"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
