@@ -12,6 +12,7 @@ class PostDashboard < Administrate::BaseDashboard
     id: Field::Number,
     date: Field::Date,
     rationale: Field::Text,
+    status: Field::Text,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -23,7 +24,7 @@ class PostDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     user
-    id
+    status
     date
     rationale
   ].freeze
@@ -35,6 +36,7 @@ class PostDashboard < Administrate::BaseDashboard
     id
     date
     rationale
+    status
     created_at
     updated_at
   ].freeze
